@@ -1,0 +1,5 @@
+ts,customer_id,location
+2021-05-07 07:01:00,"[customer 2, is at fruit, customer 3, is at spices, customer 4, is at spices]"
+2021-05-07 07:01:00,"[customer 2, is at fruit, customer 3, is at spices, customer 4, is at spices]"
+2021-05-07 07:01:00,"[self.cust_id,self.state, self.cust_id,self.state, self.cust_id,self.state, self.cust_id,self.state]"
+2021-05-07 07:01:00,"[id 2, state drinks, id 3, state drinks]"
