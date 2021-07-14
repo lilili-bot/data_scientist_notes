@@ -1,0 +1,18 @@
+version: '3'
+
+# list of each "service": an individual part of the pipeline
+services:
+     luftdaten_collector:
+        build: luftdaten/
+        volumes: 
+        - ./luftdaten/:/app
+        depends_on:
+        - pgdb
+     pgdb:
+      image: postgres
+      ports: 
+      - 5558:5432
+      environment: 
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+
