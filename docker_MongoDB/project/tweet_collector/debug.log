@@ -1,0 +1,685 @@
+CRITICAL 2021.07.22. 16:21:54 [tweet_streaming.py:72] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:27:59 [tweet_streaming.py:103] program error:
+ERROR 2021.07.22. 16:27:59 [tweet_streaming.py:104] 'int' object is not callable
+ERROR 2021.07.22. 16:27:59 [tweet_streaming.py:105] Traceback (most recent call last):
+  File "tweet_streaming.py", line 100, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 72, in on_status
+    logging.WARNING()
+TypeError: 'int' object is not callable
+
+ERROR 2021.07.22. 16:28:06 [tweet_streaming.py:103] program error:
+ERROR 2021.07.22. 16:28:06 [tweet_streaming.py:104] 'int' object is not callable
+ERROR 2021.07.22. 16:28:06 [tweet_streaming.py:105] Traceback (most recent call last):
+  File "tweet_streaming.py", line 100, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 72, in on_status
+    logging.WARNING()
+TypeError: 'int' object is not callable
+
+ERROR 2021.07.22. 16:28:09 [tweet_streaming.py:103] program error:
+ERROR 2021.07.22. 16:28:09 [tweet_streaming.py:104] 'int' object is not callable
+ERROR 2021.07.22. 16:28:09 [tweet_streaming.py:105] Traceback (most recent call last):
+  File "tweet_streaming.py", line 100, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 72, in on_status
+    logging.WARNING()
+TypeError: 'int' object is not callable
+
+ERROR 2021.07.22. 16:28:12 [tweet_streaming.py:103] program error:
+ERROR 2021.07.22. 16:28:12 [tweet_streaming.py:104] 'int' object is not callable
+ERROR 2021.07.22. 16:28:12 [tweet_streaming.py:105] Traceback (most recent call last):
+  File "tweet_streaming.py", line 100, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 72, in on_status
+    logging.WARNING()
+TypeError: 'int' object is not callable
+
+ERROR 2021.07.22. 16:28:14 [tweet_streaming.py:103] program error:
+ERROR 2021.07.22. 16:28:14 [tweet_streaming.py:104] 'int' object is not callable
+ERROR 2021.07.22. 16:28:14 [tweet_streaming.py:105] Traceback (most recent call last):
+  File "tweet_streaming.py", line 100, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 72, in on_status
+    logging.WARNING()
+TypeError: 'int' object is not callable
+
+ERROR 2021.07.22. 16:28:17 [tweet_streaming.py:103] program error:
+ERROR 2021.07.22. 16:28:17 [tweet_streaming.py:104] 'int' object is not callable
+ERROR 2021.07.22. 16:28:17 [tweet_streaming.py:105] Traceback (most recent call last):
+  File "tweet_streaming.py", line 100, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 72, in on_status
+    logging.WARNING()
+TypeError: 'int' object is not callable
+
+CRITICAL 2021.07.22. 16:30:03 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:30:33 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:30:33 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:30:33 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+CRITICAL 2021.07.22. 16:30:40 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:31:11 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:31:11 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:31:11 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+CRITICAL 2021.07.22. 16:31:12 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:31:42 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:31:42 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:31:42 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+CRITICAL 2021.07.22. 16:31:45 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:32:15 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:32:15 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:32:15 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+CRITICAL 2021.07.22. 16:32:17 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:32:47 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:32:47 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:32:47 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+CRITICAL 2021.07.22. 16:32:51 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:33:22 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:33:22 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:33:22 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f980e97844fc701e0e17ce, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+CRITICAL 2021.07.22. 16:33:28 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:37:27 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:37:27 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982872a6ef88f8353d8bc, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:37:28 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982872a6ef88f8353d8bc, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+ERROR 2021.07.22. 16:37:59 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:37:59 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982872a6ef88f8353d8bc, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:37:59 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982872a6ef88f8353d8bc, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+INFO 2021.07.22. 16:38:20 [tweet_streaming.py:53] connected. listening for incoming tweets
+INFO 2021.07.22. 16:38:21 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:38:52 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:38:52 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982d98e275043095c61f2, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:38:52 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982d98e275043095c61f2, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+INFO 2021.07.22. 16:38:53 [tweet_streaming.py:53] connected. listening for incoming tweets
+INFO 2021.07.22. 16:38:53 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:39:24 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:39:24 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982d98e275043095c61f2, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:39:24 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982d98e275043095c61f2, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+INFO 2021.07.22. 16:39:25 [tweet_streaming.py:53] connected. listening for incoming tweets
+INFO 2021.07.22. 16:39:26 [tweet_streaming.py:73] INCOMING NEW DATA!
+ERROR 2021.07.22. 16:39:56 [tweet_streaming.py:101] program error:
+ERROR 2021.07.22. 16:39:56 [tweet_streaming.py:102] mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982d98e275043095c61f2, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+ERROR 2021.07.22. 16:39:56 [tweet_streaming.py:103] Traceback (most recent call last):
+  File "tweet_streaming.py", line 98, in <module>
+    stream.filter(track=['corona'], languages=['en'], is_async=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 474, in filter
+    self._start(is_async)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 389, in _start
+    self._run()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 320, in _run
+    six.reraise(*exc_info)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 289, in _run
+    self._read_loop(resp)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 351, in _read_loop
+    self._data(next_status_obj)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 323, in _data
+    if self.listener.on_data(data) is False:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/tweepy/streaming.py", line 54, in on_data
+    if self.on_status(status) is False:
+  File "tweet_streaming.py", line 76, in on_status
+    db_tweets.tweets.insert_one(tweet)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 698, in insert_one
+    self._insert(document,
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 613, in _insert
+    return self._insert_one(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/collection.py", line 602, in _insert_one
+    self.__database.client._retryable_write(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1497, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1829, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 496, in get_server_session
+    self._select_servers_loop(
+  File "/Users/lilycheng/opt/anaconda3/lib/python3.8/site-packages/pymongo/topology.py", line 215, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: mongodb:27017: [Errno 8] nodename nor servname provided, or not known, Timeout: 30s, Topology Description: <TopologyDescription id: 60f982d98e275043095c61f2, topology_type: Single, servers: [<ServerDescription ('mongodb', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongodb:27017: [Errno 8] nodename nor servname provided, or not known')>]>
+
+INFO 2021.07.22. 16:39:57 [tweet_streaming.py:53] connected. listening for incoming tweets
+INFO 2021.07.22. 16:39:58 [tweet_streaming.py:73] INCOMING NEW DATA!
+INFO 2021.07.22. 16:51:54 [tweet_streaming.py:53] connected. listening for incoming tweets
+INFO 2021.07.22. 16:51:54 [tweet_streaming.py:73] INCOMING NEW DATA!

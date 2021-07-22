@@ -1,0 +1,18 @@
+/* 
+Create and start containers in docker-compose.yml
+docker-compose up
+
+# Create and start containers in background, and rebuild any images
+docker-compose up --build -d
+
+# Stop containers
+docker-compose stop 
+
+# Build an image using a tag (name:tag format)
+docker build -t notetaking-app:latest .
+
+# Run the built image
+docker run -itd -p 3000:3000 notetaking-app:latest
+*/
+
+compose differnece containers: is to add more servers. 
