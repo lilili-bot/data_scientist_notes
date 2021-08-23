@@ -4,11 +4,8 @@ from tweepy.streaming import StreamListener
 import time
 import pymongo
 import logging
-import traceback
 
 
-logging.basicConfig(filename='debug.log', level=logging.INFO,
-                    format='%(levelname)s %(asctime)s [%(filename)s:%(lineno)d] %(message)s', datefmt='%Y.%m.%d. %H:%M:%S')
 # start an engine
 client = pymongo.MongoClient("mongodb://mongodb:27017/")
 # create a table
@@ -68,11 +65,11 @@ class MaxTweetsListener(StreamListener):
             'retweets': status.retweet_count
         }
 
-        logging.info('INCOMING NEW DATA!')
-        logging.info(
+        print('INCOMING NEW DATA!')
+        print(
             'New tweet arrived:', tweet["text"], tweet['username'], tweet['followers_count'])
         db_tweets.tweets.insert_one(tweet)
-        logging.info('inserted into databse!')
+        print('inserted into databse!')
 
         # check if we have enough tweets collected
         if self.max_tweets == self.counter:
@@ -89,13 +86,9 @@ class MaxTweetsListener(StreamListener):
 
 if __name__ == '__main__':
     while True:
-        try:
-            auth = authenticate()
-            listener = MaxTweetsListener(max_tweets=100)
-            stream = Stream(auth, listener)
-            stream.filter(track=['corona'], languages=['en'], is_async=False)
-            time.sleep(30)
-        except Exception as e:
-            logging.error('program error:')
-            logging.error(e)
-            logging.error(traceback.format_exc())
+
+        auth = authenticate()
+        listener = MaxTweetsListener(max_tweets=100)
+        stream = Stream(auth, listener)
+        stream.filter(track=['corona'], languages=['en'], is_async=False)
+        time.sleep(30)
