@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<!-- saved from url=(0474)file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E5%8D%95%E5%9B%A0%E5%AD%90%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html -->
+<html lang="en"><!-- Start book Introduction --><!-- Start book Introduction --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- head:start -->
+<!-- head:start -->
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>单因子方差分析 | Introduction</title>
+        
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="./sse_files/style.css">
+    
+        
+        <link rel="stylesheet" href="./sse_files/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="./sse_files/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="./sse_files/expandable-chapters.css">
+        
+    
+        
+        <link rel="stylesheet" href="./sse_files/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="./sse_files/plugin(1).css">
+        
+    
+        
+        <link rel="stylesheet" href="./sse_files/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="./sse_files/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="./sse_files/test.css">
+        
+    
+        
+        <link rel="stylesheet" href="./sse_files/atoc.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E5%A4%9A%E5%9B%A0%E5%AD%90%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html">
+    
+    
+    <link rel="prev" href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E4%BB%80%E4%B9%88%E6%98%AF%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html">
+    
+
+        <!-- head:end -->
+<!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+<!-- body:start -->
+        
+    <div class="book without-animation with-summary font-size-2 font-family-1" data-level="5.4.2" data-chapter-title="单因子方差分析" data-filepath="5.HypothesisTest/方差分析/单因子方差分析.md" data-basepath="../.." data-revision="Thu Apr 29 2021 11:13:55 GMT+0800 (CST)" data-innerlanguage="">
+    
+
+<div class="book-summary" style="width: 300px; left: 0px; position: absolute;">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="1" data-path="1.CourseGuidance/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/1.CourseGuidance/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        课程导学
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="1.CourseGuidance/why.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/1.CourseGuidance/why.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        为什么要学习统计学
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="1.2" data-path="1.CourseGuidance/course_info.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/1.CourseGuidance/course_info.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        课程内容介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1.CourseGuidance/scipy.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/1.CourseGuidance/scipy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        scipy.stats和statsmodels.stats简介
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="2" data-path="2.DescriptiveStatistics/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/2.DescriptiveStatistics/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        描述性统计
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="2.DescriptiveStatistics/random_variable.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/2.DescriptiveStatistics/random_variable.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        随机变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="2.2" data-path="2.DescriptiveStatistics/average.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/2.DescriptiveStatistics/average.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        集中趋势度量-平均数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="2.3" data-path="2.DescriptiveStatistics/range.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/2.DescriptiveStatistics/range.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        变异性度量— 距和分位数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="2.4" data-path="2.DescriptiveStatistics/variance.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/2.DescriptiveStatistics/variance.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        变异性度量— 方差和标准差
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="3" data-path="3.Probability/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/3.Probability/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        概率
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter  expanded" data-level="3.1" data-path="3.Probability/random_events.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/3.Probability/random_events.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        随机事件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="3.2" data-path="3.Probability/probability.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/3.Probability/probability.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        概率
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="3.3" data-path="3.Probability/distribution.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/3.Probability/distribution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        概率分布
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="3.4" data-path="3.Probability/discrete_distribution.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/3.Probability/discrete_distribution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        离散概率分布
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="3.5" data-path="3.Probability/continuous_distribution.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/3.Probability/continuous_distribution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        连续概率分布
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="3.6" data-path="3.Probability/bayes.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/3.Probability/bayes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        贝叶斯概率
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="4" data-path="4.Sample/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/4.Sample/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        抽样
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter  expanded" data-level="4.1" data-path="4.Sample/sample.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/4.Sample/sample.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        抽样和抽样方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="4.2" data-path="4.Sample/central_limit_theorem.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/4.Sample/central_limit_theorem.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        中心极限定理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="4.3" data-path="4.Sample/confidence_interval.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/4.Sample/confidence_interval.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        置信区间
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5" data-path="5.HypothesisTest/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        假设检验
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: block;">
+                
+    
+        <li class="chapter  expanded" data-level="5.1" data-path="5.HypothesisTest/假设检验介绍/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E4%BB%8B%E7%BB%8D/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        假设检验介绍
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter  expanded" data-level="5.1.1" data-path="5.HypothesisTest/假设检验介绍/如何用最通俗易懂的方式理解假设检验.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E4%BB%8B%E7%BB%8D/%E5%A6%82%E4%BD%95%E7%94%A8%E6%9C%80%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84%E6%96%B9%E5%BC%8F%E7%90%86%E8%A7%A3%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.1.</b>
+                        
+                        理解假设检验
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5.1.2" data-path="5.HypothesisTest/假设检验介绍/假设检验流程.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E4%BB%8B%E7%BB%8D/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C%E6%B5%81%E7%A8%8B.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.2.</b>
+                        
+                        假设检验流程
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5.2" data-path="5.HypothesisTest/一个正态总体参数的检验/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E5%8F%82%E6%95%B0%E7%9A%84%E6%A3%80%E9%AA%8C/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        一个正态总体参数的检验
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter  expanded" data-level="5.2.1" data-path="5.HypothesisTest/一个正态总体参数的检验/总体均值的检验.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E5%8F%82%E6%95%B0%E7%9A%84%E6%A3%80%E9%AA%8C/%E6%80%BB%E4%BD%93%E5%9D%87%E5%80%BC%E7%9A%84%E6%A3%80%E9%AA%8C.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                        总体均值的检验
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5.2.2" data-path="5.HypothesisTest/一个正态总体参数的检验/总体比例的检验.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E5%8F%82%E6%95%B0%E7%9A%84%E6%A3%80%E9%AA%8C/%E6%80%BB%E4%BD%93%E6%AF%94%E4%BE%8B%E7%9A%84%E6%A3%80%E9%AA%8C.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                        总体比例的检验
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5.2.3" data-path="5.HypothesisTest/一个正态总体参数的检验/总体方差的检验.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E5%8F%82%E6%95%B0%E7%9A%84%E6%A3%80%E9%AA%8C/%E6%80%BB%E4%BD%93%E6%96%B9%E5%B7%AE%E7%9A%84%E6%A3%80%E9%AA%8C.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.3.</b>
+                        
+                        总体方差的检验
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5.3" data-path="5.HypothesisTest/两个正态总体参数的检验/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E4%B8%A4%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E5%8F%82%E6%95%B0%E7%9A%84%E6%A3%80%E9%AA%8C/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        两个正态总体参数的检验
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter  expanded" data-level="5.3.1" data-path="5.HypothesisTest/两个正态总体参数的检验/两个总体均值之差的检验.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E4%B8%A4%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E5%8F%82%E6%95%B0%E7%9A%84%E6%A3%80%E9%AA%8C/%E4%B8%A4%E4%B8%AA%E6%80%BB%E4%BD%93%E5%9D%87%E5%80%BC%E4%B9%8B%E5%B7%AE%E7%9A%84%E6%A3%80%E9%AA%8C.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                        两个总体均值之差的检验
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5.3.2" data-path="5.HypothesisTest/两个正态总体参数的检验/匹配样本的t检验.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E4%B8%A4%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E5%8F%82%E6%95%B0%E7%9A%84%E6%A3%80%E9%AA%8C/%E5%8C%B9%E9%85%8D%E6%A0%B7%E6%9C%AC%E7%9A%84t%E6%A3%80%E9%AA%8C.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.2.</b>
+                        
+                        匹配样本的t检验
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5.3.3" data-path="5.HypothesisTest/两个正态总体参数的检验/两个总体方差比的检验.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E4%B8%A4%E4%B8%AA%E6%AD%A3%E6%80%81%E6%80%BB%E4%BD%93%E5%8F%82%E6%95%B0%E7%9A%84%E6%A3%80%E9%AA%8C/%E4%B8%A4%E4%B8%AA%E6%80%BB%E4%BD%93%E6%96%B9%E5%B7%AE%E6%AF%94%E7%9A%84%E6%A3%80%E9%AA%8C.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.3.</b>
+                        
+                        两个总体方差比的检验
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5.4" data-path="5.HypothesisTest/方差分析/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        方差分析
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: block;">
+                
+    
+        <li class="chapter  expanded" data-level="5.4.1" data-path="5.HypothesisTest/方差分析/什么是方差分析.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E4%BB%80%E4%B9%88%E6%98%AF%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                        什么是方差分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active expanded" data-level="5.4.2" data-path="5.HypothesisTest/方差分析/单因子方差分析.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E5%8D%95%E5%9B%A0%E5%AD%90%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.2.</b>
+                        
+                        单因子方差分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="5.HypothesisTest/方差分析/多因子方差分析.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E5%A4%9A%E5%9B%A0%E5%AD%90%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.3.</b>
+                        
+                        多因子方差分析
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="5.5" data-path="5.HypothesisTest/卡方检验.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E5%8D%A1%E6%96%B9%E6%A3%80%E9%AA%8C.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        卡方检验
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="5.HypothesisTest/回归分析/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        线性回归分析
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="5.HypothesisTest/回归分析/相关分析.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/%E7%9B%B8%E5%85%B3%E5%88%86%E6%9E%90.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                        相关分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.2" data-path="5.HypothesisTest/回归分析/一元线性回归分析.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/%E4%B8%80%E5%85%83%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                        一元线性回归分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.3" data-path="5.HypothesisTest/回归分析/多元线性回归分析.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90/%E5%A4%9A%E5%85%83%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.3.</b>
+                        
+                        多元线性回归分析
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="6.StatisticalAnalysis/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/6.StatisticalAnalysis/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        因子分析
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="6.StatisticalAnalysis/主成分分析.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/6.StatisticalAnalysis/%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        主成分分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="6.StatisticalAnalysis/因子分析.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/6.StatisticalAnalysis/%E5%9B%A0%E5%AD%90%E5%88%86%E6%9E%90.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        因子分析
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="7" data-path="7.ABTest/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/7.ABTest/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        AB测试
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="7.ABTest/ab_test_idea.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/7.ABTest/ab_test_idea.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        AB测试思想
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="7.ABTest/ab_test_steps.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/7.ABTest/ab_test_steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        AB测试的基本步骤
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="7.ABTest/ab_test_project.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/7.ABTest/ab_test_project.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        AB测试项目案例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  expanded" data-level="8" data-path="8.expand/index.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/8.expand/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        扩展阅读
+                    <i class="exc-trigger fa"></i></a>
+            
+            
+            <ul class="articles" style="display: none;">
+                
+    
+        <li class="chapter  expanded" data-level="8.1" data-path="8.expand/如何通俗地理解协方差与相关系数？.html">
+            
+                
+                    <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/8.expand/%E5%A6%82%E4%BD%95%E9%80%9A%E4%BF%97%E5%9C%B0%E7%90%86%E8%A7%A3%E5%8D%8F%E6%96%B9%E5%B7%AE%E4%B8%8E%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%9F.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        协方差和相关系数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com/" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+<div class="divider-content-summary"><div class="divider-content-summary__icon"><i class="fa fa-ellipsis-v"></i></div></div></div>
+
+    <div class="book-body" style="left: 300px; position: absolute;">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <a class="btn pull-left js-toolbar-action" aria-label="" href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E5%8D%95%E5%9B%A0%E5%AD%90%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html#"><i class="fa fa-align-justify"></i></a><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E5%8D%95%E5%9B%A0%E5%AD%90%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/">Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="单因子方差分析">单因子方差分析</h1>
+<h2 id="学习目标">学习目标</h2>
+<ul>
+<li>目标<ul>
+<li>掌握单因子方差分析的流程和原理</li>
+<li>知道事后检验的作用</li>
+</ul>
+</li>
+</ul>
+<hr>
+<blockquote>
+<h3 id="目标-用来判断由一个名义变量分割的多个总体的均值是不是相等">目标: <strong>用来判断由一个名义变量分割的多个总体的均值是不是相等</strong></h3>
+<p>方差分析(analysis of variance)，简写为ANOVA，指的是利用对多个样本的方差的分析，得出总体均值是否相等的判定。</p>
+</blockquote>
+<h1 id="先来个例子">先来个例子</h1>
+<blockquote>
+<p>为了检验某小学六年级教学质量的差异，从该小学六年级的三个班级中分别选取一定数量的学生，分成三个组（三个样本），对他们期末考试的平均分进行统计分析。如果实验显示每个每组的均值相同，即三个班期末考试的成绩差异不大，则表明该小学六年级不同班级的教学质量没有差异，</p>
+<p><strong>每个样本组的平均分分别为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>μ</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>μ</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\mu_1,\mu_2,\mu_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">3</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>，方差分别为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mi>σ</mi><mn>1</mn><mn>2</mn></msubsup><mo separator="true">,</mo><msubsup><mi>σ</mi><mn>2</mn><mn>2</mn></msubsup><mo separator="true">,</mo><msubsup><mi>σ</mi><mn>3</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\sigma_1^2,\sigma_2^2,\sigma_3^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.0622159999999998em;vertical-align:-0.24810799999999997em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist"><span style="top:0.24810799999999997em;margin-left:-0.03588em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist"><span style="top:0.24810799999999997em;margin-left:-0.03588em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">2</span></span></span><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist"><span style="top:0.24810799999999997em;margin-left:-0.03588em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">3</span></span></span><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></strong></p>
+<p><strong>给出零假设: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>:</mo><msub><mi>μ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>μ</mi><mn>2</mn></msub><mo>=</mo><msub><mi>μ</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">H_0:\mu_1=\mu_2=\mu_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.08125em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">0</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">:</span><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">3</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></strong></p>
+<p><strong>备择假设<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">H_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.08125em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>：样本组的均值不全相等(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>≠</mo><msub><mi>μ</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mu_1\neq\mu_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.716em;"></span><span class="strut bottom" style="height:0.9309999999999999em;vertical-align:-0.215em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">≠</span><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>或<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>μ</mi><mn>2</mn></msub><mo>≠</mo><msub><mi>μ</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\mu_2\neq\mu_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.716em;"></span><span class="strut bottom" style="height:0.9309999999999999em;vertical-align:-0.215em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">≠</span><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">3</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>或<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>μ</mi><mn>1</mn></msub><mo>≠</mo><msub><mi>μ</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\mu_1\neq\mu_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.716em;"></span><span class="strut bottom" style="height:0.9309999999999999em;vertical-align:-0.215em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">≠</span><span class="mord"><span class="mord mathit">μ</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathrm mtight">3</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>)</strong></p>
+<p><strong>方差分析将会依据观测数据判定假设是否成立。</strong></p>
+</blockquote>
+<h1 id="1假定条件">1.假定条件</h1>
+<ol>
+<li>每个样本的值服从正态分布</li>
+<li>每个样本的方差<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sigma^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>相同</li>
+<li>每个样本中的个体相互独立</li>
+</ol>
+<h1 id="2统计量—f值">2.统计量—F值</h1>
+<p><img src="./sse_files/image-20191023222946685.png" alt="image-20191023222946685"></p>
+<p><img src="./sse_files/image-20191023223011110.png" alt="image-20191023223011110"></p>
+<ul>
+<li><p>误差平方和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>S</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">SSE</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span></p>
+<blockquote>
+<p>误差平方和就是残差,即由其他位置因素引起的误差,值为每一组的误差和 </p>
+<p>​                                    <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>k</mi></mrow></msubsup><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow></msubsup><mrow><mo>(</mo><msub><mi>X</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><mover accent="true"><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>¯</mo></mover><msup><mo>)</mo><mn>2</mn></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{k}{\sum_{j=1}^{n_i}{(X_{ij}-\bar{X_i})^2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8501079999999999em;"></span><span class="strut bottom" style="height:1.26308em;vertical-align:-0.412972em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord textstyle uncramped"><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.276864em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.44489999999999996em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mtight"><span class="mord mathit mtight">n</span><span class="msupsub"><span class="vlist"><span style="top:0.143em;margin-right:0.07142857142857144em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord textstyle uncramped"><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></span></span></p>
+<p>k为组数</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">n_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>为第i组的数据数量</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>X</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">X_{ij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>为第i组第j个数据</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>¯</mo></mover></mrow><annotation encoding="application/x-tex">\bar{X_i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8201099999999999em;"></span><span class="strut bottom" style="height:0.9701099999999999em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>为第i组的均值</p>
+</blockquote>
+<p>计算方法:</p>
+<ul>
+<li>将各组中的每个值减去<strong>该组均值</strong><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>X</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><mover accent="true"><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>¯</mo></mover></mrow><annotation encoding="application/x-tex"> X_{ij}-\bar{X_i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8201099999999999em;"></span><span class="strut bottom" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>(离差)</li>
+<li>将将该组中这些<strong>离差</strong>取平方<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><msub><mi>X</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><mover accent="true"><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>¯</mo></mover><msup><mo>)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(X_{ij}-\bar{X_i})^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8201099999999999em;"></span><span class="strut bottom" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="base textstyle uncramped"><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></li>
+<li>将该组中这些<strong>离差平方</strong>求和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow></msubsup><mrow><mo>(</mo><msub><mi>X</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><mover accent="true"><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>¯</mo></mover><msup><mo>)</mo><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">\sum_{j=1}^{n_i}{(X_{ij}-\bar{X_i})^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8201099999999999em;"></span><span class="strut bottom" style="height:1.233082em;vertical-align:-0.412972em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.276864em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.44489999999999996em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mtight"><span class="mord mathit mtight">n</span><span class="msupsub"><span class="vlist"><span style="top:0.143em;margin-right:0.07142857142857144em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord textstyle uncramped"><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></span></li>
+<li>将所有组的<strong>离差平方和</strong>求和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>k</mi></mrow></msubsup><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow></msubsup><mrow><mo>(</mo><msub><mi>X</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><mover accent="true"><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>¯</mo></mover><msup><mo>)</mo><mn>2</mn></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{k}{\sum_{j=1}^{n_i}{(X_{ij}-\bar{X_i})^2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8501079999999999em;"></span><span class="strut bottom" style="height:1.26308em;vertical-align:-0.412972em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord textstyle uncramped"><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.276864em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.44489999999999996em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mtight"><span class="mord mathit mtight">n</span><span class="msupsub"><span class="vlist"><span style="top:0.143em;margin-right:0.07142857142857144em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord textstyle uncramped"><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></span></span></li>
+</ul>
+</li>
+<li><p>组间误差平方和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>S</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">SSB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span></p>
+<blockquote>
+<p>组间误差平方和就是由分组变量引起的误差,是分组变量能够解释的误差,体现在各组均值的差异上.计算公式:</p>
+<p>​                                            <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>k</mi></mrow></msubsup><mrow><msub><mi>n</mi><mi>i</mi></msub><mo>(</mo><mover accent="true"><mrow><msub><mi>X</mi><mrow><mi>i</mi></mrow></msub></mrow><mo>¯</mo></mover><mo>−</mo><mover accent="true"><mrow><mi>X</mi></mrow><mo>¯</mo></mover><msup><mo>)</mo><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{k}{n_i(\bar{X_{i}}-\bar{X})^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8501079999999999em;"></span><span class="strut bottom" style="height:1.150118em;vertical-align:-0.30001em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mopen">(</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">−</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.07847em;">X</span></span></span><span style="top:-0.25233em;margin-left:0.16668em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></span>        </p>
+<p>k为组数</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">n_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>为第i组的数据数量</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>¯</mo></mover></mrow><annotation encoding="application/x-tex">\bar{X_i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8201099999999999em;"></span><span class="strut bottom" style="height:0.9701099999999999em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>为第i组的均值</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mrow><mi>X</mi></mrow><mo>¯</mo></mover></mrow><annotation encoding="application/x-tex">\bar{X}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8201099999999999em;"></span><span class="strut bottom" style="height:0.8201099999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.07847em;">X</span></span></span><span style="top:-0.25233em;margin-left:0.16668em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>为总均值</p>
+</blockquote>
+</li>
+<li><p>自由度</p>
+<ul>
+<li>分子:k-1</li>
+<li>分母:n-k</li>
+</ul>
+</li>
+</ul>
+<h1 id="3案例">3.案例</h1>
+<p><img src="./sse_files/image-20191023223807147.png" alt="image-20191023223807147"></p>
+<p><strong>第一步</strong>:计算各组均值</p>
+<p><strong>第二步:</strong>计算总均值</p>
+<p>将所有数加和除以个数得到总均值为<strong>3.47</strong></p>
+<p><strong>第三步</strong>:计算误差平方和(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><msub><mi>S</mi><mi>e</mi></msub></mrow><annotation encoding="application/x-tex">SS_e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>)</p>
+<p>首先计算各单个取值与所在组均值之间的离差平方,将三个平方和相加得到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><msub><mi>S</mi><mi>e</mi></msub><mo>=</mo><mn>1</mn><mn>0</mn><mi mathvariant="normal">.</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">SS_e=10.8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel">=</span><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">8</span></span></span></span></p>
+<p><img src="./sse_files/image-20191023224151278.png" alt="image-20191023224151278"></p>
+<p><strong>第四步</strong>:计算组间平方和(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><msub><mi>S</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">SS_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">b</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>)</p>
+<p><img src="./sse_files/image-20191023224352748.png" alt="image-20191023224352748"></p>
+<p><strong>第五步</strong>:计算均方误(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><msub><mi>S</mi><mi>e</mi></msub></mrow><annotation encoding="application/x-tex">MS_e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>)</p>
+<p>将误差平方和(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><msub><mi>S</mi><mi>e</mi></msub></mrow><annotation encoding="application/x-tex">SS_e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>)除以误差自由度(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mo>−</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">N-K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.07153em;">K</span></span></span></span>):   <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.44em"><mi>M</mi><msub><mi>S</mi><mi>e</mi></msub><mo>=</mo><mfrac><mrow><mi>S</mi><msub><mi>S</mi><mi>e</mi></msub></mrow><mrow><mi>N</mi><mo>−</mo><mi>K</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mn>0</mn><mi mathvariant="normal">.</mi><mn>8</mn></mrow><mrow><mn>1</mn><mn>5</mn><mo>−</mo><mn>3</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>9</mn><mn>0</mn></mstyle></mrow><annotation encoding="application/x-tex">\Large MS_e=\frac{SS_e}{N-K}=\frac{10.8}{15-3}=0.90</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.2793406399999998em;"></span><span class="strut bottom" style="height:1.8601372799999998em;vertical-align:-0.58079664em;"></span><span class="base textstyle uncramped"><span class="mord mathit sizing reset-size5 size7 textstyle uncramped" style="margin-right:0.10903em;">M</span><span class="mord sizing reset-size5 size7 textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord reset-textstyle textstyle uncramped sizing reset-size5 size7 textstyle uncramped"><span class="mopen sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.10903em;">N</span><span class="mbin mtight">−</span><span class="mord mathit mtight" style="margin-right:0.07153em;">K</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.4100999999999999em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.143em;margin-right:0.07142857142857144em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord reset-textstyle textstyle uncramped sizing reset-size5 size7 textstyle uncramped"><span class="mopen sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathrm mtight">1</span><span class="mord mathrm mtight">5</span><span class="mbin mtight">−</span><span class="mord mathrm mtight">3</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">1</span><span class="mord mathrm mtight">0</span><span class="mord mathrm mtight">.</span><span class="mord mathrm mtight">8</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">0</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">.</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">9</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">0</span></span></span></span></p>
+<p><strong>第六步</strong>:计算组间均方(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><msub><mi>S</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">MS_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">b</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>)</p>
+<p>将组间平方和(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><msub><mi>S</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">SS_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">b</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span>)除以组间自由度(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>K</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">K-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">K</span><span class="mbin">−</span><span class="mord mathrm">1</span></span></span></span>):   <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.44em"><mi>M</mi><msub><mi>S</mi><mi>b</mi></msub><mo>=</mo><mfrac><mrow><mi>S</mi><msub><mi>S</mi><mi>b</mi></msub></mrow><mrow><mi>K</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>8</mn><mi mathvariant="normal">.</mi><mn>9</mn><mn>0</mn></mrow><mrow><mn>3</mn><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>4</mn><mi mathvariant="normal">.</mi><mn>4</mn><mn>5</mn></mstyle></mrow><annotation encoding="application/x-tex">\Large MS_b=\frac{SS_b}{K-1}=\frac{8.90}{3-1}=4.45</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.2876350399999998em;"></span><span class="strut bottom" style="height:1.8684316799999998em;vertical-align:-0.58079664em;"></span><span class="base textstyle uncramped"><span class="mord mathit sizing reset-size5 size7 textstyle uncramped" style="margin-right:0.10903em;">M</span><span class="mord sizing reset-size5 size7 textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">b</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord reset-textstyle textstyle uncramped sizing reset-size5 size7 textstyle uncramped"><span class="mopen sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.07153em;">K</span><span class="mbin mtight">−</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.41585999999999995em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15122857142857138em;margin-right:0.07142857142857144em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">b</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord reset-textstyle textstyle uncramped sizing reset-size5 size7 textstyle uncramped"><span class="mopen sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathrm mtight">3</span><span class="mbin mtight">−</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">8</span><span class="mord mathrm mtight">.</span><span class="mord mathrm mtight">9</span><span class="mord mathrm mtight">0</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">4</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">.</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">4</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">5</span></span></span></span></p>
+<p><strong>第七步</strong>:计算<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">F</span></span></span></span>比率</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.44em"><mi>F</mi><mo>=</mo><mfrac><mrow><mi>M</mi><msub><mi>S</mi><mi>b</mi></msub></mrow><mrow><mi>M</mi><msub><mi>S</mi><mi>e</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><mi mathvariant="normal">.</mi><mn>4</mn><mn>5</mn></mrow><mrow><mn>0</mn><mi mathvariant="normal">.</mi><mn>9</mn><mn>0</mn></mrow></mfrac><mo>=</mo><mn>4</mn><mi mathvariant="normal">.</mi><mn>9</mn><mn>4</mn></mstyle></mrow><annotation encoding="application/x-tex">\Large F=\frac{MS_b}{MS_e}=\frac{4.45}{0.90}=4.94</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.2876350399999998em;"></span><span class="strut bottom" style="height:1.9285790399999998em;vertical-align:-0.6409439999999998em;"></span><span class="base textstyle uncramped"><span class="mord mathit sizing reset-size5 size7 textstyle uncramped" style="margin-right:0.13889em;">F</span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord reset-textstyle textstyle uncramped sizing reset-size5 size7 textstyle uncramped"><span class="mopen sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.10903em;">M</span><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.143em;margin-right:0.07142857142857144em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.41585999999999995em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.10903em;">M</span><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15122857142857138em;margin-right:0.07142857142857144em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">b</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord reset-textstyle textstyle uncramped sizing reset-size5 size7 textstyle uncramped"><span class="mopen sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathrm mtight">0</span><span class="mord mathrm mtight">.</span><span class="mord mathrm mtight">9</span><span class="mord mathrm mtight">0</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathrm mtight">4</span><span class="mord mathrm mtight">.</span><span class="mord mathrm mtight">4</span><span class="mord mathrm mtight">5</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">4</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">.</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">9</span><span class="mord mathrm sizing reset-size5 size7 textstyle uncramped">4</span></span></span></span></p>
+<p><strong>第八步</strong>:查表得到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">F</span></span></span></span>临界值</p>
+<p>分子自由度为2,分母自由度为12,查表得到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">F</span></span></span></span>临界值为3.88(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mi mathvariant="normal">.</mi><mn>0</mn><mn>5</mn></mrow><annotation encoding="application/x-tex">\alpha=0.05</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mrel">=</span><span class="mord mathrm">0</span><span class="mord mathrm">.</span><span class="mord mathrm">0</span><span class="mord mathrm">5</span></span></span></span>)</p>
+<p><strong>第九步</strong>:判定<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">F</span></span></span></span>值是否统计显著</p>
+<p><img src="./sse_files/image-20191023225854593.png" alt="image-20191023225854593"></p>
+<p>做出结论,认为统计结果是显著的,意味着各组均值不完全相等,就是说至少有两组的均值不相等</p>
+<p><strong>代码手动实现:</strong></p>
+<ul>
+<li><p>获取数据</p>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#加载数据</span></span>
+<span class="code-line">x<span class="token operator">=</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span></span>
+<span class="code-line">age<span class="token operator">=</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">]</span><span class="token punctuation">)</span></span>
+<span class="code-line">data<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>np<span class="token punctuation">.</span>vstack<span class="token punctuation">(</span><span class="token punctuation">[</span>age<span class="token punctuation">,</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T<span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">,</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">)</span></span>
+<span class="code-line">data</span></code><i class="fa fa-clone t-copy"></i></pre></div>
+<p><img src="./sse_files/image-20200627115150154.png" alt="image-20200627115150154"></p>
+</li>
+<li><p>计算各组均值</p>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#计算各组均值</span></span>
+<span class="code-line">means<span class="token operator">=</span>data<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token string">'age'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+<span class="code-line">means<span class="token punctuation">.</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'mu'</span><span class="token punctuation">]</span></span>
+<span class="code-line">means</span></code><i class="fa fa-clone t-copy"></i></pre></div>
+<p><img src="./sse_files/image-20200627115316569.png" alt="image-20200627115316569"></p>
+</li>
+<li><p>计算总均值</p>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#计算总均值</span></span>
+<span class="code-line">mean<span class="token operator">=</span>data<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+<span class="code-line">mean<span class="token comment">#3.466666666666667</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+</li>
+<li><p>计算总误差<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>S</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">SST</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span></p>
+<blockquote>
+<p>总误差就是数据整体的方差*n  :  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∑</mo><mrow><mo>(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mrow><mi>X</mi></mrow><mo>¯</mo></mover><msup><mo>)</mo><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">\sum{(X_i-\bar{X})^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8201099999999999em;"></span><span class="strut bottom" style="height:1.07012em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="mord textstyle uncramped"><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.07847em;">X</span></span></span><span style="top:-0.25233em;margin-left:0.16668em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></span></p>
+</blockquote>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#计算总误差SST</span></span>
+<span class="code-line">SST<span class="token operator">=</span>np<span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token operator">-</span>mean<span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="code-line">SST<span class="token comment">#19.733333333333334</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+</li>
+<li><p>计算残差(误差平方和)<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>S</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">SSE</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span></p>
+<blockquote>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>k</mi></mrow></msubsup><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow></msubsup><mrow><mo>(</mo><msub><mi>X</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>−</mo><mover accent="true"><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><mo>¯</mo></mover><msup><mo>)</mo><mn>2</mn></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{k}{\sum_{j=1}^{n_i}{(X_{ij}-\bar{X_i})^2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8501079999999999em;"></span><span class="strut bottom" style="height:1.26308em;vertical-align:-0.412972em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord textstyle uncramped"><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.276864em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.44489999999999996em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mtight"><span class="mord mathit mtight">n</span><span class="msupsub"><span class="vlist"><span style="top:0.143em;margin-right:0.07142857142857144em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord textstyle uncramped"><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></span></span></p>
+</blockquote>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#计算残差(误差平方和)SSE</span></span>
+<span class="code-line">SSE_5<span class="token operator">=</span>np<span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>data<span class="token punctuation">[</span>data<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token operator">-</span>means<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token string">'mu'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="code-line">SSE_8<span class="token operator">=</span>np<span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>data<span class="token punctuation">[</span>data<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token operator">-</span>means<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token string">'mu'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="code-line">SSE_12<span class="token operator">=</span>np<span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>data<span class="token punctuation">[</span>data<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">12</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token operator">-</span>means<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token string">'mu'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
+<span class="code-line">SSE<span class="token operator">=</span>SSE_5<span class="token operator">+</span>SSE_8<span class="token operator">+</span>SSE_12</span>
+<span class="code-line">SSE<span class="token comment">#10.8</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+</li>
+<li><p>计算年龄带来的误差(组间平方和)<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>S</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">SSB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span></p>
+<blockquote>
+<p>​    <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>k</mi></mrow></msubsup><mrow><msub><mi>n</mi><mi>i</mi></msub><mo>(</mo><mover accent="true"><mrow><msub><mi>X</mi><mrow><mi>i</mi></mrow></msub></mrow><mo>¯</mo></mover><mo>−</mo><mover accent="true"><mrow><mi>X</mi></mrow><mo>¯</mo></mover><msup><mo>)</mo><mn>2</mn></msup></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{k}{n_i(\bar{X_{i}}-\bar{X})^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8501079999999999em;"></span><span class="strut bottom" style="height:1.150118em;vertical-align:-0.30001em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mopen">(</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.07847em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.25233em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">−</span><span class="mord accent"><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.07847em;">X</span></span></span><span style="top:-0.25233em;margin-left:0.16668em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="accent-body"><span>¯</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></span></p>
+</blockquote>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#计算年龄带来的误差(组间平方和)SSB</span></span>
+<span class="code-line">SSB_5<span class="token operator">=</span><span class="token number">5</span><span class="token operator">*</span><span class="token punctuation">(</span>means<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token string">'mu'</span><span class="token punctuation">]</span><span class="token operator">-</span>mean<span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span></span>
+<span class="code-line">SSB_8<span class="token operator">=</span><span class="token number">5</span><span class="token operator">*</span><span class="token punctuation">(</span>means<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token string">'mu'</span><span class="token punctuation">]</span><span class="token operator">-</span>mean<span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span></span>
+<span class="code-line">SSB_12<span class="token operator">=</span><span class="token number">5</span><span class="token operator">*</span><span class="token punctuation">(</span>means<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token string">'mu'</span><span class="token punctuation">]</span><span class="token operator">-</span>mean<span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span></span>
+<span class="code-line">SSB<span class="token operator">=</span>SSB_5<span class="token operator">+</span>SSB_8<span class="token operator">+</span>SSB_12</span>
+<span class="code-line">SSB<span class="token comment">#8.933333333333335</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+</li>
+<li><p>计算<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>S</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">MSB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>S</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">MSE</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span></p>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#计算计算MSB和MSE</span></span>
+<span class="code-line">n<span class="token operator">=</span>data<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token comment">#总数据个数</span></span>
+<span class="code-line">k<span class="token operator">=</span>means<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token comment">#组数</span></span>
+<span class="code-line">df1<span class="token operator">=</span>k<span class="token operator">-</span><span class="token number">1</span></span>
+<span class="code-line">df2<span class="token operator">=</span>n<span class="token operator">-</span>k</span>
+<span class="code-line">MSB<span class="token operator">=</span>SSB<span class="token operator">/</span>df1</span>
+<span class="code-line">MSE<span class="token operator">=</span>SSE<span class="token operator">/</span>df2</span>
+<span class="code-line">MSB<span class="token punctuation">,</span>MSE<span class="token comment">#(4.466666666666668, 0.9)</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+</li>
+<li><p>计算F统计量</p>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#计算F统计量</span></span>
+<span class="code-line">f<span class="token operator">=</span>MSB<span class="token operator">/</span>MSE</span>
+<span class="code-line">f<span class="token comment">#4.962962962962964</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+</li>
+<li><p>计算p值</p>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#计算p值  </span></span>
+<span class="code-line">p<span class="token operator">=</span><span class="token number">1</span><span class="token operator">-</span>ss<span class="token punctuation">.</span>f<span class="token punctuation">.</span>cdf<span class="token punctuation">(</span>f<span class="token punctuation">,</span>df1<span class="token punctuation">,</span>df2<span class="token punctuation">)</span></span>
+<span class="code-line">p<span class="token comment">#p=0.026874464601159942&lt;0.05   拒绝原假设 各组均值不完全相等</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+</li>
+</ul>
+<p><strong>scipy实现:</strong></p>
+<p>api:<code>scipy.stats.f_oneway(*args)</code>:</p>
+<ul>
+<li><p>参数:<strong>sample1, sample2, ...</strong> <em>: array_like</em></p>
+</li>
+<li><p>返回值:</p>
+<ul>
+<li><code>tstats</code>:统计量值</li>
+<li><code>pvalue</code>:p值</li>
+</ul>
+</li>
+</ul>
+<p><strong>代码实现:</strong></p>
+<ul>
+<li><p>数据分组</p>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#数据分组</span></span>
+<span class="code-line">df5<span class="token operator">=</span>data<span class="token punctuation">[</span>data<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span></span>
+<span class="code-line">df8<span class="token operator">=</span>data<span class="token punctuation">[</span>data<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span></span>
+<span class="code-line">df12<span class="token operator">=</span>data<span class="token punctuation">[</span>data<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">12</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+</li>
+<li><p>方差分析</p>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#方差分析</span></span>
+<span class="code-line">f<span class="token punctuation">,</span>p<span class="token operator">=</span>ss<span class="token punctuation">.</span>f_oneway<span class="token punctuation">(</span>df5<span class="token punctuation">,</span>df8<span class="token punctuation">,</span>df12<span class="token punctuation">)</span></span>
+<span class="code-line">f<span class="token punctuation">,</span>p<span class="token comment">#(4.962962962962963, 0.026874464601159935)</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+</li>
+</ul>
+<p><strong>statsmodels实现</strong>:</p>
+<blockquote>
+<p>能够输出方差分析表,更优雅</p>
+</blockquote>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token comment">#statsmodels实现</span></span>
+<span class="code-line"><span class="token keyword">from</span> statsmodels<span class="token punctuation">.</span>formula<span class="token punctuation">.</span>api <span class="token keyword">import</span> ols</span>
+<span class="code-line"><span class="token keyword">from</span> statsmodels<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>anova <span class="token keyword">import</span> anova_lm</span>
+<span class="code-line"><span class="token comment">#分组字段必须是字符串类型</span></span>
+<span class="code-line">data<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token operator">=</span>data<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>str_<span class="token punctuation">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="token comment">#最小二乘法拟合</span></span>
+<span class="code-line">model <span class="token operator">=</span> ols<span class="token punctuation">(</span><span class="token string">'x ~ age'</span><span class="token punctuation">,</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>fit<span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+<span class="code-line"><span class="token comment">#到处方差分析结果</span></span>
+<span class="code-line">anovat <span class="token operator">=</span> anova_lm<span class="token punctuation">(</span>model<span class="token punctuation">)</span></span>
+<span class="code-line">anovat</span></code><i class="fa fa-clone t-copy"></i></pre></div>
+<p><img src="./sse_files/image-20200627140043356.png" alt="image-20200627140043356"></p>
+<blockquote>
+<h2 id="问题来了——怎么知道是哪些均值不相等">问题来了——怎么知道是哪些均值不相等</h2>
+</blockquote>
+<h1 id="4-事后检验">4. 事后检验</h1>
+<blockquote>
+<p>在判定组均值之间有显著差异后,仍有一些问题悬而未决.这个结果只能表明至少有两个组之间的均值有显著差异,但没有说明究竟哪几个组均值显著不同.我们必须进行<strong>事后检验</strong></p>
+</blockquote>
+<h2 id="tukeyhsdtukey-hsdtukeyhsd—tukeytukeytukey检验"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mi>u</mi><mi>k</mi><mi>e</mi><mi>y</mi><mi>H</mi><mi>S</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">Tukey HSD</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mord mathit">u</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.02778em;">D</span></span></span></span>—<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mi>u</mi><mi>k</mi><mi>e</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">Tukey</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mord mathit">u</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span>检验</h2>
+<p><img src="./sse_files/image-20191023230734782.png" alt="image-20191023230734782"></p>
+<p>查询对应的统计量(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.61508em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">t</span></span></span></span>分布)表来判定两个组均值是否显著差异</p>
+<blockquote>
+<p> 继续上面的案例</p>
+</blockquote>
+<p><img src="./sse_files/image-20191023231249480.png" alt="image-20191023231249480"></p>
+<p><img src="./sse_files/image-20191023231300141.png" alt="image-20191023231300141"></p>
+<p><img src="./sse_files/image-20191023231313401.png" alt="image-20191023231313401"></p>
+<p>结论:组1和组3有显著差异</p>
+<p><strong>statsmodels实现</strong>:</p>
+<div class="code-wrapper"><pre><code class="lang-python"><span class="code-line"><span class="token keyword">from</span> statsmodels<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>multicomp <span class="token keyword">import</span> MultiComparison</span>
+<span class="code-line">mc <span class="token operator">=</span> MultiComparison<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>data<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">)</span></span>
+<span class="code-line">tukey_result <span class="token operator">=</span> mc<span class="token punctuation">.</span>tukeyhsd<span class="token punctuation">(</span>alpha <span class="token operator">=</span> <span class="token number">0.05</span><span class="token punctuation">)</span></span>
+<span class="code-line"><span class="token keyword">print</span><span class="token punctuation">(</span>tukey_result<span class="token punctuation">)</span></span></code><i class="fa fa-clone t-copy"></i></pre></div>
+<p><img src="./sse_files/image-20200627145630957.png" alt="image-20200627145630957"></p>
+<blockquote>
+<p>从结果中可以看出,5-12两组间拒绝原假设,有明显差异.其余两组间无明显差异</p>
+</blockquote>
+<h3 id="5小结">5.小结</h3>
+<ul>
+<li><strong>单因子方差分析</strong>:用来判断由一个名义变量分割的多个总体的均值是不是相等</li>
+<li>统计量:<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.44em"><mi>F</mi><mo>=</mo><mfrac><mrow><mi>M</mi><msub><mi>S</mi><mi>b</mi></msub></mrow><mrow><mi>M</mi><msub><mi>S</mi><mi>e</mi></msub></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\Large F=\frac{MS_b}{MS_e}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.2876350399999998em;"></span><span class="strut bottom" style="height:1.9285790399999998em;vertical-align:-0.6409439999999998em;"></span><span class="base textstyle uncramped"><span class="mord mathit sizing reset-size5 size7 textstyle uncramped" style="margin-right:0.13889em;">F</span><span class="mrel sizing reset-size5 size7 textstyle uncramped">=</span><span class="mord reset-textstyle textstyle uncramped sizing reset-size5 size7 textstyle uncramped"><span class="mopen sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight" style="margin-right:0.10903em;">M</span><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.143em;margin-right:0.07142857142857144em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">e</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.41585999999999995em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.10903em;">M</span><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist"><span style="top:0.15122857142857138em;margin-right:0.07142857142857144em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped mtight"><span class="mord mathit mtight">b</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size7 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose sizing reset-size7 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span><ul>
+<li>意义是分组变量解释的误差/不可解释误差 的比例,该值越大,说明分组变量影响越大</li>
+</ul>
+</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>S</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">SST</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span>:总误差</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>S</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">SSB </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span>:组间误差(分组变量可解释的误差)</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>S</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">SSE </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.05764em;">E</span></span></span></span>:残差(不可解释的误差)</li>
+</ul>
+</li>
+<li>api:<ul>
+<li>scipy: <code>scipy.stats.f_oneway(*args)</code></li>
+<li>statsmodels:<ul>
+<li><code>ols('x ~ age',data).fit()</code>最小二乘拟合</li>
+<li><code>anova_lm(model)</code>输出方差分析表</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>事后检验:<ul>
+<li>作用:找出有差异的组</li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E4%BB%80%E4%B9%88%E6%98%AF%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html" class="navigation navigation-prev " aria-label="Previous page: 什么是方差分析"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="file:///Users/lilycheng/Documents/18%E3%80%81%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A8%EF%BC%89/%E7%AC%AC3%E9%98%B6%E6%AE%B5-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BB%BA%E6%A8%A1%E5%88%86%E6%9E%90/02_%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%B5%84%E6%96%99/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%AF%BE%E4%BB%B6/5.HypothesisTest/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90/%E5%A4%9A%E5%9B%A0%E5%AD%90%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.html" class="navigation navigation-next " aria-label="Next page: 多因子方差分析" style="margin-right: 0px;"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="./sse_files/app.js"></script>
+
+    
+    <script src="./sse_files/splitter.js"></script>
+    
+
+    
+    <script src="./sse_files/expandable-chapters.js"></script>
+    
+
+    
+    <script src="./sse_files/toggle.js"></script>
+    
+
+    
+    <script src="./sse_files/plugin.js"></script>
+    
+
+    
+    <script src="./sse_files/fontsettings.js"></script>
+    
+
+    
+    <script src="./sse_files/plugin(2).js"></script>
+    
+
+    
+    <script src="./sse_files/test.js"></script>
+    
+
+    
+    <script src="./sse_files/atoc.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"katex":{},"splitter":{},"expandable-chapters":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":false,"tocLevel1Icon":"","tocLevel2Icon":"","tocLevel3Icon":""},"toggle-chapters":{},"code":{"copyButtons":true},"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{},"hide-element":{},"theme-comscore":{},"atoc":{},"toc":{}};
+    gitbook.start(config);
+});
+</script><textarea id="code-textarea"></textarea>
+
+        <!-- body:end -->
+<!-- body:end -->
+    
+    <!-- End of book Introduction -->
+<!-- End of book Introduction -->
+
+</body></html>

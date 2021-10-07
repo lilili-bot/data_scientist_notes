@@ -1,0 +1,10 @@
+# Task 2: Deep Learning (Estimated time: 15 min)
+- The provided code includes errors.
+- Please identify the errors and describe then in 1-2 sentences. Result to hand in: a txt file
+
+This is a CNN network, the aim is at handeling 16 pictures, with 3 classes. However befor loading img, we need to do 2 steps:
+1. turn img into fload data type, using image.img_to_array(img) 
+2. ture size into shpe (1, 224, 224, 3) using np.expand_dims(x, axis=0)# size为(1, 224, 224, 3)
+
+The next bug i suspect is: 
+3. the last layer using /activation='sigmoid'/ is not correct if it is a 3 classes classfier. However softmax would pass better. 
