@@ -6,3 +6,5 @@ def sout(str):
 
 str="I did some changes."
 sout(str)
+str="the second change"
+sout(str)
